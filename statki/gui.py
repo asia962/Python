@@ -40,23 +40,38 @@ def draw_ships(player, left=0, top=0):
     for ship in player.ships:
         x = left + ship.col * B_SIZE
         y = top + ship.row * B_SIZE
-        ship_image = pygame.image.load("Battleships\AircraftCarrier.png").convert_alpha()
         IMAGE_POSITION = (x, y)
         if ship.orientation == 'h':
+            if ship.size == 5:
+                ship_image = pygame.image.load("images\AircraftCarrier.png")
+            elif ship.size == 4:
+                ship_image = pygame.image.load("images\BattleShip.png")
+            elif ship.size == 3:
+                ship_image = pygame.image.load("images\Cruiser.png")
+            elif ship.size == 2:
+                ship_image = pygame.image.load("images\Submarine.png")
+            else:
+                ship_image = pygame.image.load("images\PatrolBoat.png")
             width = ship.size * B_SIZE
             height = B_SIZE
             IMAGE_SIZE = (width, height)
             ship_image = pygame.transform.scale(ship_image, IMAGE_SIZE)
         else:
+            if ship.size == 5:
+                ship_image = pygame.image.load("images\AircraftCarrierV.png")
+            elif ship.size == 4:
+                ship_image = pygame.image.load("images\BattleShipV.png")
+            elif ship.size == 3:
+                ship_image = pygame.image.load("images\CruiserV.png")
+            elif ship.size == 2:
+                ship_image = pygame.image.load("images\SubmarineV.png")
+            else:
+                ship_image = pygame.image.load("images\PatrolBoatV.png")
             width = B_SIZE
             height = ship.size * B_SIZE
             IMAGE_SIZE = (width, height)
             ship_image = pygame.transform.scale(ship_image, IMAGE_SIZE)
-            ship_image = pygame.transform.rotate(ship_image, 180)
-        #rect = pygame.Rect(x, y, width, height)
-        #pygame.draw.rect(SCREEN, GREEN, rect, border_radius=15)
-        #ship_image = pygame.image.load("Battleships\AircraftCarrier.png").convert_alpha()
-        #player_rect = ship_image.get_rect(center=(x, y))
+            #ship_image = pygame.transform.rotate(ship_image, 180)
         SCREEN.blit(ship_image, IMAGE_POSITION)
 
 

@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30804.86
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "mrowka", "mrowka\mrowka.pyproj", "{8B5592FC-18B3-4109-B126-16A0C19ED0AD}"
+EndProject
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "date", "date\date.pyproj", "{A9740D45-74C9-4DFD-A3A7-44A02837453C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8B5592FC-18B3-4109-B126-16A0C19ED0AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8B5592FC-18B3-4109-B126-16A0C19ED0AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A9740D45-74C9-4DFD-A3A7-44A02837453C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A9740D45-74C9-4DFD-A3A7-44A02837453C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {06BF9226-0395-4196-A67B-8848F0A17E76}
+	EndGlobalSection
+EndGlobal

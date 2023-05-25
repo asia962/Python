@@ -1,0 +1,3 @@
+Wynik dzia³ania progamu Mrówka Langtona: 
+Mrówka wykona³a 50 kroków! 
+Koñcowa liczba czarnych pól to: 12 a bia³ych:  888 
